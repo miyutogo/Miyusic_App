@@ -10,13 +10,16 @@ app.post('/login', (req, res) => {
         clientSecret:'2c9681f88c3b4b08b0b46b9617472645'
     })
 
-    spotifyApi.authorizationCodeGrant(code).then(data => {
+    spotifyApi
+    .authorizationCodeGrant(code)
+    .then(data => {
         res.json({
             accessToken: data.body.access_token,
             refreshToken:data.body.refresh_token,
             expiresIn: data.body.expires_in
         })
-    }).catch(() = {
+    })
+    .catch(() = {
         res.sendStatus(400)
     })
 })

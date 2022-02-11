@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import Login from "./Login"
-/* import Dashboard from "./Dashboard" */
+import Login from "./Components/Login"
+import Dashboard from "./Components/Dashboard"
 
-const code = new URLSearchParams(window.location.search).get
+const code = new URLSearchParams(window.location.search).get('code')
+
 function App() {
   return (
-   <Login/>
+    code ? <Dashboard code={code} /> : <Login/>
   )
   ;
 }
