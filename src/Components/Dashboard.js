@@ -52,21 +52,36 @@ function Dashboard({ code }) {
       return() =>  cancel = true
   }, [search, accessToken])
 
+
+
   return (
-    <Container className='p-2'>
-        <Form.Control type='search' placeholder='Search' value={search} onChange={e => setSearch(e.target.value)} />
-        <div 
-          className='d-flex flex-wrap'
+    <Container className='p-1'>
+        <Form.Control 
+          type='search' 
+          placeholder='Search' 
+          value={search} 
+          onChange={e => setSearch(e.target.value)}
           style={{
-            maxHeight:'50%',
-            overflow: 'hidden',
+            height: '50px',
+            widht: '100vw',
+          }} 
+        />
+        <div 
+          className='d-flex flex-wrap mt-4 '
+          style={{
+            height: '80vh',
+            overflow: 'auto',
+            scrollbarWidth: '0',
+    
           }}
         >
           {results.map(track => (
             <TrackResult track={track} key={track.uri} selectTrack={selectTrack} />
           ))}
         </div>
-        <div>
+        <div
+          
+        >
           <MusicPlayer accessToken={accessToken} trackUri={selectedTrack?.uri}/>
         </div>
     </Container>

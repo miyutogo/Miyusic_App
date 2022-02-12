@@ -10,8 +10,10 @@ function TrackResult({track, selectTrack}) {
         style={{ 
             cursor: "pointer",
             width: '400px',
+            height: '100px',
             border: '1px solid',
-            borderRadius: '15px'
+            borderRadius: '15px',
+            backgroundColor: 'cyan',
          }}
         onClick={handlePlayButton}
     >
