@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useAuth from './useAuth'
 import MusicPlayer from './MusicPlayer'
 import TrackResult from './TrackResult'
-import {Container, Form, Card, Typography} from 'react-bootstrap';
+import {Container, Form} from 'react-bootstrap';
 import SpotifyWebApi from 'spotify-web-api-node'
 
 const spotifyApi = new SpotifyWebApi({
