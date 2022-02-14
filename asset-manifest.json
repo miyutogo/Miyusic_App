@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Miyusic_App/static/css/main.1a8a0596.css",
-    "main.js": "/Miyusic_App/static/js/main.e46dc1a5.js",
+    "main.js": "/Miyusic_App/static/js/main.3aecab3f.js",
     "index.html": "/Miyusic_App/index.html",
     "main.1a8a0596.css.map": "/Miyusic_App/static/css/main.1a8a0596.css.map",
-    "main.e46dc1a5.js.map": "/Miyusic_App/static/js/main.e46dc1a5.js.map"
+    "main.3aecab3f.js.map": "/Miyusic_App/static/js/main.3aecab3f.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
-    "static/js/main.e46dc1a5.js"
+    "static/js/main.3aecab3f.js"
   ]
 }
