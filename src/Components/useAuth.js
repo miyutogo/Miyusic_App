@@ -11,7 +11,7 @@ function useAuth(code) {
 
     useEffect(() => { 
         axios
-        .post('https://miyutogo.github.io/Miyusic_App/login', {
+        .post('http://localhost:3001/login', {
             code,
         })
         .then(res => {
@@ -31,7 +31,7 @@ function useAuth(code) {
         if (refreshToken == null || expiresIn == null) return
         const interval = setInterval(() => {
             axios
-                .post('https://miyutogo.github.io/Miyusic_App/refresh', {
+                .post('http://localhost:3001/refresh', {
                     refreshToken,
                 })
                 .then(res => {
