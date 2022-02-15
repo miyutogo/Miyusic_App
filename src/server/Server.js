@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.post('/login', (req, res) => {
     const code = req.body.code
     const spotifyApi = new SpotifyWebApi({
-        redirectUri: 'https://miyutogo.github.io/Miyusic_App/',
+        redirectUri: 'https://miyutogo.github.io/Miyusic_App',
         clientId: '9a14d7c8301240a3a0f999068d197353',
         clientSecret:'2c9681f88c3b4b08b0b46b9617472645',
     })
@@ -33,8 +33,9 @@ app.post('/login', (req, res) => {
 
 app.post('/refresh', (req, res) => {
     const refreshToken = req.body.refreshToken
+
     const spotifyApi = new SpotifyWebApi({
-        redirectUri: 'https://miyutogo.github.io/Miyusic_App/',
+        redirectUri: 'https://miyutogo.github.io/Miyusic_App',
         clientId: '9a14d7c8301240a3a0f999068d197353',
         clientSecret:'2c9681f88c3b4b08b0b46b9617472645',
         refreshToken,
@@ -55,4 +56,4 @@ app.post('/refresh', (req, res) => {
         })
 })
 
-app.listen(3001)
+
